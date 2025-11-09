@@ -5,7 +5,7 @@ Our project focuses on developing, implementing, and evaluating **algorithmic tr
 The final submission date for this project was **June 29, 2025**.
 
 
-## Assessment Notebook Overview 
+# Assessment Notebook Overview 
 
 ## Table of Contents 
 1. [Data Acquisition](#data-acquisition)  
@@ -86,7 +86,7 @@ In the final discussion, we explore:
 
 
 
-## Research Notebook Overview
+# Research Notebook Overview
 
 The **`research_notebook.ipynb`** expands on the assessment notebook by conducting a **full empirical analysis** of the implemented trading strategies.  
 It evaluates the robustness, parameter sensitivity, and economic interpretation of the signals across multiple assets and time periods.
