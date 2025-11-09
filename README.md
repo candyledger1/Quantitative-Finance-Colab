@@ -4,7 +4,7 @@ This repository contains the work for the **“B404B Computational Finance”** 
 Our project focuses on developing, implementing, and evaluating **algorithmic trading strategies** based on historical stock data using **Python and NumPy**.  
 The final submission date for this project was **June 29, 2025**.
 
----
+
 ## Assessment Notebook Overview 
 
 ## Table of Contents 
@@ -14,13 +14,13 @@ The final submission date for this project was **June 29, 2025**.
 4. [Statistics of the Strategy](#statistics-of-the-strategy)  
 5. [Graphs of Strategy](#graphs-of-strategy)
 
----
+
 
 The project uses historical stock price data (closing prices and returns) from **Yahoo Finance**.  
 All data is automatically downloaded and cleaned within the notebooks.  
 The datasets serve as the foundation for testing and evaluating the trading strategies.
 
----
+
 
 ## Definition of Trading Signals
 
@@ -37,7 +37,7 @@ Implements a **dynamic volatility channel** that generates buy/sell signals when
 
 Each signal was parameterized, tested, and calibrated using in-sample data, then validated on out-of-sample periods.
 
----
+
 
 ## Computation of Signals and Portfolio Positions
 
@@ -46,7 +46,7 @@ Each signal was parameterized, tested, and calibrated using in-sample data, then
 - The resulting time series of positions is combined with returns to generate **strategy returns**.  
 - All reusable functions (returns, volatility, signal generation, evaluation) are stored in **`module.py`** for cleaner structure and reproducibility.
 
----
+
 
 ## Statistical Analysis
 
@@ -59,7 +59,7 @@ The performance of each trading strategy is evaluated using several financial me
 
 These statistics allow a comprehensive comparison between the individual signals and a passive benchmark strategy such as the **S&P 500**.
 
----
+
 
 ## Graphical Results
 
@@ -72,7 +72,7 @@ The notebooks visualize the strategies through:
 
 These visualizations make it easy to interpret the effectiveness of each signal and its robustness across different market regimes.
 
----
+
 
 ## Additional Considerations
 
@@ -83,7 +83,7 @@ In the final discussion, we explore:
 - The **economic intuition** behind each strategy’s performance  
 - How combining multiple signals could potentially improve diversification  
 
----
+
 
 
 ## Research Notebook Overview
@@ -91,7 +91,7 @@ In the final discussion, we explore:
 The **`research_notebook.ipynb`** expands on the assessment notebook by conducting a **full empirical analysis** of the implemented trading strategies.  
 It evaluates the robustness, parameter sensitivity, and economic interpretation of the signals across multiple assets and time periods.
 
----
+
 
 ## 📘 Table of Contents
 1. [Data Acquisition and Preprocessing](#data-acquisition-and-preprocessing)  
@@ -104,7 +104,7 @@ It evaluates the robustness, parameter sensitivity, and economic interpretation 
 8. [Performance Visualization](#performance-visualization)  
 9. [Economic Interpretation and Discussion](#economic-interpretation-and-discussion)
 
----
+
 
 ## Data Acquisition and Preprocessing
 
@@ -115,7 +115,7 @@ It evaluates the robustness, parameter sensitivity, and economic interpretation 
   - **Out-of-sample (2020–2025)** for validation and robustness testing  
 - Basic price visualizations reveal general market movement patterns and volatility differences between the assets.
 
----
+
 
 ## Exploratory Stock Analysis
 
@@ -126,7 +126,7 @@ Before implementing signals, the notebook plots normalized price trends for all 
 
 These plots provide a **contextual foundation** for why each trading strategy is designed the way it is.
 
----
+
 
 ## Signal 1 — Moving Average Crossover with MACD Indicator
 
@@ -136,7 +136,7 @@ These plots provide a **contextual foundation** for why each trading strategy is
 - Strategy is evaluated across all four assets to identify the best-performing combination.  
 - The combined signal demonstrates **superior Sharpe ratio** compared to using MA or MACD alone.
 
----
+
 
 ## Signal 2 — RSI with Bollinger Bands
 
@@ -145,7 +145,7 @@ These plots provide a **contextual foundation** for why each trading strategy is
 - Parameter grids are defined for RSI lookback, threshold bounds, and Bollinger window/width.  
 - Results show strong performance on AMD, with improved **risk-adjusted returns** compared to benchmarks.  
 
----
+
 
 ## Signal 3 — Breakout Momentum Strategy
 
@@ -153,15 +153,15 @@ These plots provide a **contextual foundation** for why each trading strategy is
 - Focuses on momentum continuation patterns following significant market moves.  
 - This signal acts as a **trend accelerator**, complementing the smoother mean reversion signals.  
 
----
 
-## 🔍 Parameter Optimization
+
+## Parameter Optimization
 
 - Each signal is optimized via **grid search** using in-sample data.  
 - The notebook reports best-performing parameter combinations per asset and strategy.  
 - Optimization criteria include **Sharpe ratio**, **maximum drawdown**, and **volatility**.  
 
----
+
 
 ## Backtesting and Evaluation
 
@@ -175,7 +175,7 @@ These plots provide a **contextual foundation** for why each trading strategy is
 
 All statistics are summarized in **formatted tables** for direct comparison across assets.
 
----
+
 
 ## Performance Visualization
 
@@ -187,7 +187,7 @@ All statistics are summarized in **formatted tables** for direct comparison acro
   - Signal entry/exit timing  
   - Portfolio growth trajectories  
 
----
+
 
 ## Economic Interpretation and Discussion
 
@@ -197,7 +197,7 @@ The notebook concludes by interpreting results economically:
 - The combination of momentum and volatility filters provides a balanced, risk-efficient performance.  
 - Practical aspects such as **transaction costs** and **market noise filtering** are discussed as real-world considerations.
 
----
+
 
  *This research notebook thus represents the empirical backbone of the project, testing, optimizing, and interpreting multiple algorithmic trading signals using real financial data in Python.*
 
