@@ -15,13 +15,6 @@ The final submission date for this project was **June 29, 2025**.
 
 ---
 
-## Setup and Data Import
-
-To run the notebooks, you need a Python environment with the following packages installed:
-
-```bash
-pip install numpy pandas matplotlib scipy pandas_datareader
-
 The project uses historical stock price data (closing prices and returns) from **Yahoo Finance**.  
 All data is automatically downloaded and cleaned within the notebooks.  
 The datasets serve as the foundation for testing and evaluating the trading strategies.
